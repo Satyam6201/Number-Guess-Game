@@ -65,3 +65,4 @@ Try to guess the secret number within limited chances, earn points, and enjoy �
 - HTML5 – structure
 - CSS3 – styling, animations, responsive layout
 - JavaScript (ES6) – game logic & confetti
+---
