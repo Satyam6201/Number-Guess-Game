@@ -36,4 +36,10 @@ Try to guess the secret number within limited chances, earn points, and enjoy �
 ---
 
 ## 📂 Project Structure
-
+```
+📁 number-guess-game
+┣ 📄 index.html # Main HTML structure
+┣ 📄 style.css # Styling and animations
+┣ 📄 app.js # Game logic and confetti
+┣ 📄 Image # Game image
+┗ 📄 README.md # Project documentation
