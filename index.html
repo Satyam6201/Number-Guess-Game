@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Number Guess Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>🎯 Guess the Number!</header>
+    <p class="guess"></p>
+
+    <div class="difficulty">
+      <label for="level">Select Difficulty:</label>
+      <select id="level">
+        <option value="100">Medium (1–100)</option>
+        <option value="50">Easy (1–50)</option>
+        <option value="500">Hard (1–500)</option>
+      </select>
+    </div>
+
+    <div class="input-field">
+      <input type="number" min="1" />
+      <button id="checkBtn">Check</button>
+    </div>
+
+    <p>You have <span class="chances">10</span> chances</p>
+    <p>⭐ Score: <span class="score">0</span></p>
+    <button id="hintBtn">💡 Get Hint</button>
+  </div>
+
+  <!-- Confetti Overlay -->
+  <canvas id="confetti"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
