@@ -43,3 +43,19 @@ Try to guess the secret number within limited chances, earn points, and enjoy �
 ┣ 📄 app.js # Game logic and confetti
 ┣ 📄 Image # Game image
 ┗ 📄 README.md # Project documentation
+```
+
+---
+## 📝 Future Improvements
+
+- Add Dark Mode toggle 🌙/☀️
+- Track high scores across sessions
+- Add timer mode (guess before time runs out)
+- More hint options (e.g., “higher/lower range”)
+  
+---
+## 👨‍💻 Tech Stack
+
+- HTML5 – structure
+- CSS3 – styling, animations, responsive layout
+- JavaScript (ES6) – game logic & confetti
