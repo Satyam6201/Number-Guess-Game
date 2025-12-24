@@ -3,37 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Number Guess Game</title>
-  <link rel="icon" href="image">
+  <title>Smart Number Guess Game</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <header>🎯 Guess the Number!</header>
-    <p class="guess"></p>
 
-    <div class="difficulty">
-      <label for="level">Select Difficulty:</label>
-      <select id="level">
-        <option value="100">Medium (1–100)</option>
-        <option value="50">Easy (1–50)</option>
-        <option value="500">Hard (1–500)</option>
-      </select>
-    </div>
+<canvas id="confetti"></canvas>
 
-    <div class="input-field">
-      <input type="number" min="1" />
-      <button id="checkBtn">Check</button>
-    </div>
+<div class="game">
+  <h1>🎯 Guess The Number</h1>
 
-    <p>You have <span class="chances">10</span> chances</p>
-    <p>⭐ Score: <span class="score">0</span></p>
-    <button id="hintBtn">💡 Get Hint</button>
+  <p class="message">Start guessing...</p>
+
+  <div class="settings">
+    <label>Difficulty:</label>
+    <select id="level">
+      <option value="50">Easy (1–50)</option>
+      <option value="100" selected>Medium (1–100)</option>
+      <option value="500">Hard (1–500)</option>
+    </select>
   </div>
 
-  <!-- Confetti Overlay -->
-  <canvas id="confetti"></canvas>
+  <div class="input-box">
+    <input type="number" id="guessInput" placeholder="Enter number" />
+    <button id="checkBtn">Check</button>
+  </div>
 
-  <script src="app.js"></script>
+  <p>❤️ Chances: <span id="chances">10</span></p>
+  <p>⏳ Time Left: <span id="timer">30</span>s</p>
+  <p>⭐ Score: <span id="score">0</span></p>
+  <p>🏆 High Score: <span id="highScore">0</span></p>
+
+  <button id="hintBtn">💡 Get Hint</button>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
